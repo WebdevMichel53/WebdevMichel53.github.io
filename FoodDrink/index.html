@@ -13,49 +13,186 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-     <!-- #region Header-->
-     <div class="container">
+    <!-- #region Header-->
         <nav class="navbar navbar-expand-lg bg-light fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img class="logo" src="resources/images/food-and-drink.svg" alt="">
-                    Start Bootstrap
+                    Food & Drink
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--Pour mettre le menu à droite de la navbar, mettre ms-auto-->
                     <ul class="navbar-nav pull-right ms-auto" >
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#Menus" onclick="javascript:hidemenu()">Nos menus</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#Valeurs" onclick="javascript:hidemenu()">Nos valeurs</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#Trouver" onclick="javascript:hidemenu()">Nous trouvez</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#Producteurs" onclick="javascript:hidemenu()">Nos producteurs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#References" onclick="javascript:hidemenu()">Nos references</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-    </div>
     <!-- #endregion -->
+    <div class="container">
     <!-- #region Menu -->
-    <section>
-        <h2>Menu "Légumes"</h2>
-        <div>
-            <ul>
-                <li>Carpaccio de betteraves marinées au soja et gingembre</li>
-                <li>Tourte feuilletée – céleri et truffe, jus concentré de légumes</li>
-                <li>Topi noisettes – topinambour poché au sirop, condiment passion , crème glacée noisette</li>
-                <li>Vin rouge Ventoux – Les grains marsellan 2015</li>
-            </ul>
+        <section id="Menus">
+            <div>
+                <h2>Menu "Légumes" : 54 €</h2>
+                <ul>
+                    <li class="size-font">Carpaccio de betteraves marinées au soja et gingembre
+                        <img src="resources/images/carpaccio.jpg" alt="">
+                    </li>
+                    <li class="size-font">Tourte feuilletée – céleri et truffe, jus concentré de légumes
+                        <img src="resources/images/tourte.jpg" alt="">
+                    </li>
+                    <li class="size-font">Topinambour poché au sirop, condiment passion , crème glacée noisette
+                        <img src="resources/images/topi.jpg" alt="">
+                    </li>
+                    <li class="size-font">Vin rouge Ventoux – Les grains marsellan 2015
+                        <img src="resources/images/ventoux.jpg" alt="">
+                    </li>
+                </ul>
+                <a class="size-font reserve button" href="#Formulaire" title="Toto">Reserver</a>
+            </div>
+            <div>
+                <h2>Menu "Au rythme des saisons" : 71 €</h2>
+                <ul>
+                    <li class="size-font">Foie-gras mi-cuit au sichuan
+                        <img src="resources/images/foie-gras.jpg" alt="">
+                    </li>
+                    <li class="size-font">Turbot rôti au ras el-hanout, chou-fleur et choux de bruxelles
+                        <img src="resources/images/turbot.jpg" alt="">
+                    </li>
+                    <li class="size-font">Agrumes - crème diplomate au citron, pesto à l'estragon
+                        <img src="resources/images/creme-diplomate.jpg" alt="">
+                    </li>
+                    <li class="size-font">Bourgogne Pinot noir 2017
+                        <img src="resources/images/pinot.jpg" alt="">
+                    </li>
+                </ul>
+                
+                <a class="button size-font reserve" href="#Formulaire">Reserver</a>
+            </div>
+        </section>
+    <!-- #endregion -->
+    <!-- #region Nos valeurs-->
+        <section id="Valeurs">
+            <h2>Nos valeurs</h2>
+            <p class="size-font">Nous travaillons uniquement des produits de saison avec des producteurs locaux 
+                et souhaitons également les mettres à l'honneur.</p>
+        </section>
+    <!-- #endregion -->
+    <!-- #region Nous trouver-->
+    <section id="Trouver">
+        <h2>Nous trouver</h2>
+        <p class="size-font">
+            3 rue de la Charlotais,
+            35000 Rennes
+            0102030405
+        </p>
+        <ul>
+            <li class="size-font">lundi au vendredi: 12h à 22h</li>
+            <li class="size-font">samedi et dimanche: 12h à 24h</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.0503328772734!2d-1.682776084876876!3d48.109264761112314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede336647100f%3A0x705cb7733a64bcce!2s3%20Rue%20de%20la%20Chalotais%2C%2035000%20Rennes!5e0!3m2!1sfr!2sfr!4v1656593576902!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="size-font reserve" href="#Formulaire">Reserver</a>
+    </section>
+    <!-- #endregion -->
+    <!-- #region Nos producteurs-->
+    <section id="Producteurs">
+        <h2>Nos producteurs</h2>
+        <div class="main-grid">
+            <div class="main-item1 sub-grid">
+                <span class="size-font sub-item1">Les amis de la ferme</span>
+                <img class="item-image sub-item2" src="resources/images/amisdelaferme.jpg" alt="">
+                <a class="button size-font sub-item3" href="https://www.amisdelaferme.fr/">site</a>
+            </div>
+            <div class="main-item2 sub-grid">
+                <span class="size-font sub-item1">Les jardins du châtaigner</span>
+                <img class="item-image sub-item2" src="resources/images/cueillette-libre.jpg" alt="">
+                <a class="button size-font sub-item3" href="https://www.cueillette-bio-rennes.fr/">site</a>
+            </div>
+            <div class="main-item3 sub-grid">
+                <span class="size-font sub-item1">Maison gesbert</span>
+                <img class="item-image sub-item2" src="resources/images/Saint-Aubin-du-Cormier.jpg" alt="">
+                <a class="button size-font sub-item3" href="https://www.maisongesbert.com">site</a>
+            </div>
         </div>
     </section>
     <!-- #endregion -->
+    <!-- #region Nos references-->
+    <section id="References">
+        <h2>Nos references</h2>
+        <div class="main-grid">
+            <div class="main-item1 sub-grid">
+                <span class="size-font sub-item1">Gault et Millau</span>
+                <img class="item-image sub-item2" src="resources/images/gault&millau.png" alt="">
+                <a class="button size-font sub-item3" href="https://fr.gaultmillau.com/">site</a>
+            </div>
+            <div class="main-item2 sub-grid">
+                <span class="size-font sub-item1">Michelin</span>
+                <img class="item-image item-image2 sub-item2" src="resources/images/michelin.png" alt="">
+                <a class="button size-font sub-item3" href="https://guide.michelin.com/fr/fr">site</a>
+            </div>
+            <div class="main-item3 sub-grid">
+                <span class="size-font sub-item1">Trip Advisor</span>
+                <img class="item-image item-image2 sub-item2" src="resources/images/tripavdisor.png" alt="">
+                <a class="button size-font sub-item3" href="https://www.tripadvisor.fr">site</a>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
+    <!-- #region Formulaire-->
+    <section id="Formulaire">
+        <h2>Formulaire</h2>
+        <form action="">
+            <fieldset>
+                <label class="size-font" for="firstname">Prénom : </label>
+                <input class="size-font" type="text" name="firstname" id="firstname">
+                <br>
+                <label class="size-font" for="address">Adresse : </label>
+                <input class="size-font" id="address" name="address" type="text">
+                <br>
+                <label class="size-font" for="email">E-mail : </label>
+                <input class="size-font" id="email" name="email" type="text">
+                <br>
+                <label class="size-font" for="phone">Téléphone : </label>
+                <input class="size-font" id="phone" name="phone" type="text">
+                <br>
+                <label class="size-font" for="comment">Commentaires : </label>
+                <input class="size-font" id="comment" name="comment" type="text">
+                <br>
+                <label class="size-font" for="date">Date : </label>
+                <input class="size-font" type="datetime-local" name="date">
+                <input class="size-font" type="submit" value="Reserver">
+            </fieldset>
+        </form>
+    </section>
+    <!-- #endregion -->
+    <!-- #region Footer-->
+    <footer>
+        <a class="size-font reserve" href="#PtitMic_GrandJo">Mentions légales</a>
+    </footer>
+    <!-- #endregion -->
+    </div>
+    <script>
+        function hidemenu() {
+            document.getElementById('navbarNav').className = document.getElementById('navbarNav').className.replace('show', ' hide');
+
+        }
+    </script>
 </body>
 </html>
