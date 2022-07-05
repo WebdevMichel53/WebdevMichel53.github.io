@@ -24,6 +24,11 @@ body{
     font-size: 2.5em;
     color: black;
 }
+.title-yellow{
+    text-align: center;
+    font-size: 2.5em;
+    color: yellow;
+}
 .reserve{
     display: flex;
     justify-content: center; 
@@ -101,7 +106,7 @@ iframe{
 }
 .sub-grid{
     display: grid;
-    grid-template-rows: 3;
+    grid-template-rows: 2;
     grid-template-columns: 1;
 }
 .sub-item1{
@@ -114,15 +119,14 @@ iframe{
     grid-column: 1;
     display: block;
     margin: auto;
-}
-.sub-item3{
-    grid-row: 3;
-    grid-column: 1;
-    text-align: center;
+    margin-bottom: 2.5em;
 }
 .item-image{
     width: 22vw;
     height:33vh;
+}
+.item-image:hover{
+    opacity: 0.5;
 }
 /* Formulaire */
 .formulaire{
