@@ -1,15 +1,17 @@
-
-
 /* Global */
 @font-face {
     font-family: 'majuscules_BD';
     src: url('../font/majusculesBD.ttf');
 }
+html{
+    scroll-padding-top: 11.5em;
+}
 body{
     font-family: 'majuscules_BD';
+    background-image: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
 }
 .container{
-    padding-top: 5%;
+    padding-top: 11.5em;
     
 }
 .logo{
@@ -17,41 +19,69 @@ body{
     height: 5em;
     background-color: black;
 }
-h2{
+.title{
     text-align: center;
     font-size: 2.5em;
-    color: red;
+    color: black;
 }
 .reserve{
     display: flex;
-    justify-content: center;*/
-    
+    justify-content: center; 
 }
 .size-font{
-    font-size: 2em;
+    font-size: 1.3em;
 }
 /* Navbar */
+.bg-navbar{
+    background-color: red;
+}
 .navbar-brand{
     font-size: 2em;
+    color: darkgoldenrod;
 }
 .nav-item{
     font-size: 2em;
+   
+}
+.nav-link{
+    color: darkgoldenrod;
 }
 /* Menus */
-ul li img{
+.Menu1{
+    background-color: green;
+}
+.Menu2{
+    background-color: yellowgreen;
+}
+.menus-image{
     width: 22vw;
     height: auto;
     padding: 1.5em;
 }
 /* Valeurs */
-#Valeurs p{
+.valeurs{
+    background-color: yellow;
+}
+.valeurs-content{
     text-align: center;
 }
-/* Trouvez */
-#Trouvez p, #Trouvez ul{
+/* Trouver */
+.trouver{
+    background-color: gray;
+}
+iframe{
+    margin-left: 20em;
+}
+#Trouver p, #Trouver ul{
     text-align: center;
 }
-/* Prducteurs / References*/
+/* Producteurs / References*/
+.producteurs{
+    background-color: aqua;
+}
+.references{
+    background-color: brown;
+}
 .main-grid{
     display: grid;
     grid-template-rows: 1;
@@ -91,24 +121,22 @@ ul li img{
     text-align: center;
 }
 .item-image{
-    width: 33vw;
-    height:66vh;
-}
-.item-image2{
-    width: 33vw;
+    width: 22vw;
+    height:33vh;
 }
 /* Formulaire */
-form{
+.formulaire{
     display: flex;
     justify-content: center;
 }
-fieldset{
+.label{
+    color: yellow;
+    padding-bottom: 2.5em;
+}
+.fieldset{
     width: fit-content;
     padding: 2.5em;
     border: 1px solid black;
-}
-fieldset label{
-    padding-bottom: 2.5em;
 }
 .space_top {
     padding-top: 20%; 
@@ -123,27 +151,28 @@ fieldset label{
     margin-left and margin-right + width = 100%*/
     text-decoration: none;
     width:fit-content;
+    height: fit-content;
     margin-left:45%;
     margin-right:45%;
     margin-top: 20px;
+    margin-bottom: 10px;
     background-color: lightgrey;
     padding: 15px 20px 14px;
     color:darkorange;
     border-radius: 30px;
 
 }
-.carte{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
+.button:hover{
+    background-color:red;
 }
-.button:hover{background-color:red;}
-.nav-link:hover{background-color:red;}
-
+.legal{
+    width: 20em;
+    margin-left: 30%;
+}
 @media (max-width:400px){
+/* Global */
 .container{
-    padding-top: 15%;  
+    padding-top: 7.5em;  
 }
 .space_top {
     padding-top: 15%; 
@@ -157,6 +186,25 @@ fieldset label{
     width: 3em;
     height: 3em;
     background-color: black;
+}
+/* Menus */
+.menus-image{
+    width: 66vw;
+    height: auto;
+}
+/* Trouver */
+.trouver, .Menu2, .Menu1{
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+.carte{
+    width: 20em;
+    height: auto;
+    margin-left: 2.5em;
+}
+/* Producteurs / References */
+.producteurs, .references{
+    padding-bottom: 2.5em;
 }
 .main-grid{
   display:block; 
@@ -186,5 +234,9 @@ fieldset label{
     
     display: block;
     height: 40vh;
+}
+.legal{
+    width: 40vw;
+    margin-left: 5em;
 }
 }
